@@ -1,0 +1,21 @@
+/* Scrollbar styling */
+
+::-webkit-scrollbar {
+    width: 5px;
+    
+}
+
+::-webkit-scrollbar-track {
+    background: #9a197c; /* Track color */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4b1974; /* Thumb color */
+    border-radius: 4px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3b3b3b; /* Thumb color on hover */
+}
