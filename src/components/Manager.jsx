@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { v4 as uuidv4 } from 'uuid';
 
+
 const Manager = () => {
     const ref = useRef();
     const passRef = useRef();
@@ -109,7 +110,7 @@ const Manager = () => {
 
                     <button
                         onClick={savePassword}
-                        className="font-bold flex items-center gap-1 justify-center w-fit px-4 py-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 text-white hover:bg-purple-700 transition-all duration-300"
+                        className="hover:scale-105 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 font-bold flex items-center gap-1 justify-center w-fit px-4 py-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 text-white hover:bg-purple-700 transition-all duration-300"
                     >
                         <lord-icon
                             src="https://cdn.lordicon.com/jgnvfzqg.json"
@@ -133,10 +134,10 @@ const Manager = () => {
                     <div className="flex flex-col gap-4">
                         {passwordsArray.map((items, index) => (
                             <div key={index} className="border border-gray-400 p-4 rounded-lg bg-white/20 shadow-md flex justify-between items-center transition-all duration-300 hover:bg-purple-600">
-                                <div className="flex gap-8">
+                                <div className="flex flex-col gap-8">
                                     <div>
                                         <p className="font-bold">Site:</p>
-                                        <a href={items.site} target='_blank' rel="noreferrer" className="text-blue-300 hover:text-blue-400">{items.site}</a>
+                                        <a href={items.site} target='_blank' rel="noreferrer" className="text-blue-900 hover:text-blue-400">{items.site}</a>
                                     </div>
                                     <div>
                                         <p className="font-bold">User Name:</p>
